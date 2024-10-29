@@ -1133,7 +1133,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &949591452
 Transform:
   m_ObjectHideFlags: 0
@@ -1163,7 +1163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 949591455}
   mHiddenRoot: {fileID: 0}
-  mTargetName: photo_2024-09-28_20-43-03
+  mTargetName: photo_2024-09-28_20-48-37
   mDatasetName: Vuforia/Test1.xml
   mCastedBehaviour: {fileID: 949591455}
   mMeshFilter: {fileID: 0}
@@ -1227,13 +1227,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: photo_2024-09-28_20-43-03
+  mTrackableName: photo_2024-09-28_20-48-37
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Test1.xml
   mAspectRatio: 0.75
   mImageTargetType: 0
-  mWidth: 7
-  mHeight: 5.25
+  mWidth: 8
+  mHeight: 6
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
