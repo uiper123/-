@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="photo_2024-09-28_20-48-37" size="8.000000 6.000000" />
+    <ImageTarget name="photo_2024-09-28_20-43-03" size="7.000000 5.250000" />
+    <ImageTarget name="bc0105ff-f8b4-5f30-82a2-e4ee25042a80" size="10.000000 6.728516" />
+    <ImageTarget name="qr-code-0000" size="5.000000 5.000000" />
+  </Tracking>
+</QCARConfig>
