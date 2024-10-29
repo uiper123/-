@@ -1227,13 +1227,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: photo_2024-09-28_20-48-37
+  mTrackableName: ValetPike
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Test1.xml
-  mAspectRatio: 0.75
+  mDataSetPath: Vuforia/TuzCresti.xml
+  mAspectRatio: 1.4301676
   mImageTargetType: 0
-  mWidth: 8
-  mHeight: 6
+  mWidth: 5
+  mHeight: 7.150838
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
