@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="ValetPike" size="5.000000 7.150838" />
+    <ImageTarget name="DamaPike" size="5.000000 7.729469" />
+    <ImageTarget name="tuzCR" size="5.000000 7.381776" />
+  </Tracking>
+</QCARConfig>
