@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4ea4c1758ac4b147a282fbebf76c0f4, type: 3}
   m_Name: CubeGreen
   m_EditorClassIdentifier: 
-  elementName: 
-  elementPrefab: {fileID: 0}
-  compatibleElements: []
-  incompatibleElements: []
+  elementName: CubeGreen
+  elementPrefab: {fileID: 1176114039162355011, guid: e21a1ff6f03ca83488e4a353ac848130,
+    type: 3}
+  compatibleElements:
+  - CubeBlue
+  incompatibleElements:
+  - CubeRed
+  - CubePirple

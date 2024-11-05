@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4ea4c1758ac4b147a282fbebf76c0f4, type: 3}
   m_Name: CubePirple
   m_EditorClassIdentifier: 
-  elementName: 
-  elementPrefab: {fileID: 0}
-  compatibleElements: []
-  incompatibleElements: []
+  elementName: CubePirple
+  elementPrefab: {fileID: 1176114039162355011, guid: 46d5aee737800b44da288e97196d5dcc,
+    type: 3}
+  compatibleElements:
+  - CubeBlack
+  - CubeGreen
+  incompatibleElements:
+  - CubeRed
+  - CubePirple

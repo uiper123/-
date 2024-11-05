@@ -17,7 +17,7 @@ MonoBehaviour:
     type: 3}
   compatibleElements:
   - CubeGreen
-  - CubePirple
+  - CubeRed
   incompatibleElements:
-  - CubeBlue
   - CubeBlack
+  - CubePirple
