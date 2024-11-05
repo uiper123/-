@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ea4c1758ac4b147a282fbebf76c0f4, type: 3}
+  m_Name: CubeRed
+  m_EditorClassIdentifier: 
+  elementName: CubeRed
+  elementPrefab: {fileID: 1176114039162355011, guid: 8886edb8dd45c60479754588c238d700,
+    type: 3}
+  compatibleElements:
+  - CubeGreen
+  - CubePirple
+  incompatibleElements:
+  - CubeBlue
+  - CubeBlack
