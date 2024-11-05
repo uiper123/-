@@ -15,9 +15,7 @@ MonoBehaviour:
   elementName: CubeRed
   elementPrefab: {fileID: 1176114039162355011, guid: 8886edb8dd45c60479754588c238d700,
     type: 3}
-  compatibleElements:
-  - CubeGreen
-  - CubeRed
-  incompatibleElements:
-  - CubeBlack
-  - CubePirple
+  interactions:
+  - otherElementName: CubePirple
+    resultPrefab: {fileID: 1176114039162355011, guid: e21a1ff6f03ca83488e4a353ac848130,
+      type: 3}

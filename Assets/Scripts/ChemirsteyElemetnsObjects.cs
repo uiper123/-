@@ -6,6 +6,13 @@ public class ChemicalElement : ScriptableObject
 {
     public string elementName; // Название элемента
     public GameObject elementPrefab; // Префаб элемента
-    public List<string> compatibleElements; // Список совместимых элементов
-    public List<string> incompatibleElements; // Список несовместимых элементов
+
+    [System.Serializable]
+    public class Interaction
+    {
+        public string otherElementName; // Название элемента для взаимодействия
+        public GameObject resultPrefab; // Префаб результата взаимодействия
+    }
+
+    public List<Interaction> interactions; // Список возможных взаимодействий
 }
