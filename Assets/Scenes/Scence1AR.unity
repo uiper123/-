@@ -1047,7 +1047,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &857852890
 Transform:
   m_ObjectHideFlags: 0
@@ -1126,14 +1126,17 @@ GameObject:
   - component: {fileID: 949591452}
   - component: {fileID: 949591455}
   - component: {fileID: 949591454}
-  - component: {fileID: 949591453}
+  - component: {fileID: 949591457}
+  - component: {fileID: 949591458}
+  - component: {fileID: 949591459}
+  - component: {fileID: 949591460}
   m_Layer: 0
   m_Name: "\u041A\u0430\u0440\u0442\u043E\u0447\u043A\u0430 (1)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &949591452
 Transform:
   m_ObjectHideFlags: 0
@@ -1143,31 +1146,12 @@ Transform:
   m_GameObject: {fileID: 949591451}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6409874, y: -0.77404356, z: -0.48712063}
+  m_LocalPosition: {x: -1.6409874, y: -0.77404356, z: 11.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 116378514}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &949591453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 949591451}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 949591455}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: photo_2024-09-28_20-48-37
-  mDatasetName: Vuforia/Test1.xml
-  mCastedBehaviour: {fileID: 949591455}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &949591454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1227,18 +1211,98 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: ValetPike
+  mTrackableName: photo_2024-09-28_20-43-03
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/TuzCresti.xml
-  mAspectRatio: 1.4301676
+  mDataSetPath: Vuforia/Test1.xml
+  mAspectRatio: 0.75
   mImageTargetType: 0
-  mWidth: 5
-  mHeight: 7.150838
+  mWidth: 7
+  mHeight: 5.25
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 949591453}
+  mPreview: {fileID: 949591460}
+--- !u!65 &949591457
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949591451}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 8, y: 1, z: 8}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &949591458
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949591451}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &949591459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949591451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68757f057b6475c4db5a4db5b4249ea5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chemicalElement: {fileID: 11400000, guid: a6aa93adf7bc57b499a54a0a750b9d19, type: 2}
+--- !u!114 &949591460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949591451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 949591455}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: photo_2024-09-28_20-43-03
+  mDatasetName: Vuforia/Test1.xml
+  mCastedBehaviour: {fileID: 949591455}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &989657604
 GameObject:
   m_ObjectHideFlags: 0
@@ -1870,14 +1934,14 @@ GameObject:
   - component: {fileID: 1409422013}
   - component: {fileID: 1409422016}
   - component: {fileID: 1409422015}
-  - component: {fileID: 1409422014}
+  - component: {fileID: 1409422017}
   m_Layer: 0
   m_Name: "\u041A\u0430\u0440\u0442\u043E\u0447\u043A\u0430 (2)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1409422013
 Transform:
   m_ObjectHideFlags: 0
@@ -1893,25 +1957,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 116378514}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1409422014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1409422012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1409422016}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: photo_2024-09-28_20-43-03
-  mDatasetName: Vuforia/Test1.xml
-  mCastedBehaviour: {fileID: 1409422016}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1409422015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1971,18 +2016,37 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: photo_2024-09-28_20-43-03
+  mTrackableName: bc0105ff-f8b4-5f30-82a2-e4ee25042a80
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Test1.xml
-  mAspectRatio: 0.75
+  mAspectRatio: 0.6728516
   mImageTargetType: 0
-  mWidth: 7
-  mHeight: 5.25
+  mWidth: 10
+  mHeight: 6.728516
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1409422014}
+  mPreview: {fileID: 1409422017}
+--- !u!114 &1409422017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409422012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1409422016}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: bc0105ff-f8b4-5f30-82a2-e4ee25042a80
+  mDatasetName: Vuforia/Test1.xml
+  mCastedBehaviour: {fileID: 1409422016}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1443673271
 GameObject:
   m_ObjectHideFlags: 0
@@ -2243,6 +2307,10 @@ GameObject:
   - component: {fileID: 1552322431}
   - component: {fileID: 1552322430}
   - component: {fileID: 1552322433}
+  - component: {fileID: 1552322437}
+  - component: {fileID: 1552322435}
+  - component: {fileID: 1552322436}
+  - component: {fileID: 1552322438}
   m_Layer: 0
   m_Name: "\u041A\u0430\u0440\u0442\u043E\u0447\u043A\u0430"
   m_TagString: Untagged
@@ -2320,7 +2388,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1552322433}
+  mPreview: {fileID: 1552322438}
 --- !u!4 &1552322432
 Transform:
   m_ObjectHideFlags: 0
@@ -2338,6 +2406,84 @@ Transform:
   m_Father: {fileID: 116378514}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1552322433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552322429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68757f057b6475c4db5a4db5b4249ea5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chemicalElement: {fileID: 11400000, guid: 873e05f7bb3d90a4f948a32c28718fe3, type: 2}
+--- !u!65 &1552322435
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552322429}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10, y: 3, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1552322436
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552322429}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1552322437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552322429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf9da338990be6a43a4da5fe9c4632a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chemicalElement: {fileID: 0}
+  foundObjects: []
+  ImageTargetOb:
+  - {fileID: 1552322429}
+  - {fileID: 949591451}
+--- !u!114 &1552322438
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
