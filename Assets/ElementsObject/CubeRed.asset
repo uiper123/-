@@ -17,5 +17,4 @@ MonoBehaviour:
     type: 3}
   interactions:
   - otherElementName: CubePirple
-    resultPrefab: {fileID: 1176114039162355011, guid: e21a1ff6f03ca83488e4a353ac848130,
-      type: 3}
+    resultPrefab: {fileID: 11400000, guid: d276d15af7ccf27459d55aa282b0d9aa, type: 2}

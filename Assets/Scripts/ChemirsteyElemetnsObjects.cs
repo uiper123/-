@@ -11,7 +11,7 @@ public class ChemicalElement : ScriptableObject
     public class Interaction
     {
         public string otherElementName; // Название элемента для взаимодействия
-        public GameObject resultPrefab; // Префаб результата взаимодействия
+        public ChemicalElement resultPrefab; // Префаб результата взаимодействия
     }
 
     public List<Interaction> interactions; // Список возможных взаимодействий

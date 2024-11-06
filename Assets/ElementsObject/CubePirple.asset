@@ -16,5 +16,5 @@ MonoBehaviour:
   elementPrefab: {fileID: 1176114039162355011, guid: 46d5aee737800b44da288e97196d5dcc,
     type: 3}
   interactions:
-  - otherElementName: 
-    resultPrefab: {fileID: 0}
+  - otherElementName: CubeRed
+    resultPrefab: {fileID: 11400000, guid: d276d15af7ccf27459d55aa282b0d9aa, type: 2}
