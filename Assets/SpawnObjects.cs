@@ -14,6 +14,10 @@ public class ElementSpawner : MonoBehaviour
         {
             imageTarget.OnTargetStatusChanged += OnTargetStatusChanged;
         }
+        else
+        {
+            Debug.LogWarning("ImageTargetBehaviour не найден на объекте!");
+        }
     }
 
     private void OnTargetStatusChanged(ObserverBehaviour behaviour, TargetStatus status)
@@ -31,11 +35,24 @@ public class ElementSpawner : MonoBehaviour
 
     private void SpawnElement()
     {
-        if (chemicalElement && chemicalElement.elementPrefab && spawnedElement == null)
+        if (chemicalElement == null)
+        {
+            Debug.LogError("Ссылка на ChemicalElement не установлена!");
+            return;
+        }
+
+        if (chemicalElement.elementPrefab == null)
+        {
+            Debug.LogError("Prefab элемента не установлен в ChemicalElement!");
+            return;
+        }
+
+        if (spawnedElement == null)
         {
             // Спавним префаб как дочерний объект ImageTarget
             spawnedElement = Instantiate(chemicalElement.elementPrefab, transform);
             spawnedElement.transform.localPosition = Vector3.zero; // Устанавливаем позицию
+            Debug.Log("Элемент заспавнен: " + spawnedElement.name);
         }
     }
 
@@ -45,6 +62,7 @@ public class ElementSpawner : MonoBehaviour
         {
             Destroy(spawnedElement);
             spawnedElement = null;
+            Debug.Log("Элемент деспавнен.");
         }
     }
 

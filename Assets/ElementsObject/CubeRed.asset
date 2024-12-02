@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: CubeRed
   m_EditorClassIdentifier: 
   elementName: CubeRed
-  elementPrefab: {fileID: 1176114039162355011, guid: 8886edb8dd45c60479754588c238d700,
+  elementPrefab: {fileID: 1739286747648053218, guid: 2d84b971b076cf546b97d69d32982e69,
     type: 3}
   interactions:
-  - otherElementName: CubePirple
-    resultPrefab: {fileID: 11400000, guid: d276d15af7ccf27459d55aa282b0d9aa, type: 2}
+  - otherElementName: CubePirple(Clone)
+    resultPrefab: {fileID: 11400000, guid: fc640b9e7c11e654f9d318b8c0fce6a1, type: 2}
