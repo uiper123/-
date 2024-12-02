@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="NineCresti" size="5.000000 7.520564" />
+    <ImageTarget name="Joker" size="5.000000 7.757576" />
+    <ImageTarget name="KingCresti" size="5.000000 7.766990" />
+    <ImageTarget name="TwoCresti" size="5.000000 7.485380" />
+    <ImageTarget name="eightBub" size="5.000000 7.467911" />
+    <ImageTarget name="sixCresti" size="5.000000 7.600950" />
+    <ImageTarget name="FourPike" size="5.000000 7.547170" />
+    <ImageTarget name="TenPike" size="5.000000 6.986899" />
+    <ImageTarget name="SevenCresti" size="5.000000 7.322654" />
+    <ImageTarget name="KingChervi" size="5.000000 7.494145" />
+    <ImageTarget name="threeCresti" size="5.000000 7.142857" />
+    <ImageTarget name="sevenPike" size="5.000000 7.710844" />
+    <ImageTarget name="TenCresti" size="5.000000 7.347876" />
+    <ImageTarget name="fivePike" size="5.000000 7.415991" />
+    <ImageTarget name="ValetChervi" size="5.000000 7.339449" />
+    <ImageTarget name="ValetCresti" size="5.000000 7.450524" />
+    <ImageTarget name="kingBub" size="5.000000 7.305936" />
+    <ImageTarget name="ValetPike" size="5.000000 7.150838" />
+    <ImageTarget name="DamaPike" size="5.000000 7.729469" />
+    <ImageTarget name="tuzCR" size="5.000000 7.381776" />
+  </Tracking>
+</QCARConfig>
