@@ -21,6 +21,8 @@ public class ChemicalElementTrigger : MonoBehaviour
     [Header("Список карточек")]
     public List<GameObject> ImageTargetOb = new List<GameObject>(); // Список объектов карточек
     
+    public float spawnHeight = 1.0f; // Высота спавна
+    
     private void Awake()
     {
         // Расширяем список foundObjects до размера ImageTargetOb, добавляя пустые объекты
@@ -75,8 +77,11 @@ public class ChemicalElementTrigger : MonoBehaviour
         {
             // Спавним префаб как дочерний объект ImageTarget
             spawnedElement = Instantiate(chemicalElement.elementPrefab, transform);
-            spawnedElement.transform.localPosition = Vector3.zero; // Устанавливаем позицию
+            spawnedElement.transform.localPosition = new Vector3(0, spawnHeight, 0); // Устанавливаем позицию с учетом высоты спавна
             Debug.Log("Элемент заспавнен: " + spawnedElement.name);
+
+            // Добавляем компонент плавного движения
+            spawnedElement.AddComponent<SmoothFollow>().target = transform;
         }
     }
 
@@ -100,63 +105,25 @@ public class ChemicalElementTrigger : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        // Проверяем, является ли другой объект карточкой
-        if (ImageTargetOb.Contains(other.gameObject))
-        {
-            // Проходим по всем объектам ImageTargetOb и ищем дочерние объекты
-            for (int i = 0; i < ImageTargetOb.Count; i++)
-            {
-                string targetName = ImageTargetOb[i].name;
-                GameObject parentObject = ImageTargetOb[i];
-
-                // Получаем все дочерние объекты
-                Transform[] childObjects = parentObject.GetComponentsInChildren<Transform>(true);
-
-                foreach (Transform child in childObjects)
-                {
-                    // Проверяем, содержит ли имя дочернего объекта нужное имя
-                    if (child.name.Contains("Cube"))
-                    {
-                        foundObjects[i] = child.gameObject; // Записываем найденный дочерний объект в список foundObjects
-                        Debug.Log("Дочерний объект найден: " + child.name);
-                        break;
-                    }
-                }
-
-                if (foundObjects[i] == null)
-                {
-                    Debug.Log("Объект не найден: " + targetName);
-                }
-            }
-
-            // Проверяем взаимодействие элементов
-            CheckAndSpawnResult();
-        }
-    }
-
-    private void CheckAndSpawnResult()
-    {
-        foreach (GameObject foundObject in foundObjects)
-        {
-            if (foundObject != null)
-            {
-                foreach (ChemicalElement.Interaction interaction in chemicalElement.interactions)
-                {
-                   
-                        chemicalElementTrig.elementPrefab = interaction.resultPrefab.elementPrefab;
-                        SpawnElementTrig(chemicalElementTrig);
-                        return;
-                    
-                }
-            }
-        }
-    }
-
     private void SpawnElementTrig(ChemicalElement resultElement)
     {
         spawnedElementTrig = Instantiate(resultElement.elementPrefab, transform.position, Quaternion.identity);
         Debug.Log("Новый элемент заспавнен: " + spawnedElementTrig.name);
+    }
+}
+
+// Компонент для плавного следования за целью
+public class SmoothFollow : MonoBehaviour
+{
+    public Transform target;
+    public float speed = 2.0f;
+
+    void Update()
+    {
+        if (target != null)
+        {
+            Vector3 targetPosition = target.position + new Vector3(0, 1.0f, 0); // Устанавливаем высоту следования
+            transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * speed);
+        }
     }
 }

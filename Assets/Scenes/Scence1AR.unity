@@ -517,7 +517,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &130620279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -601,68 +601,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1001 &222235833
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1552322432}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 39dde7d683baa3246b721e5387d47161,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.81
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 39dde7d683baa3246b721e5387d47161,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 39dde7d683baa3246b721e5387d47161,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 39dde7d683baa3246b721e5387d47161,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 39dde7d683baa3246b721e5387d47161,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 39dde7d683baa3246b721e5387d47161,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 39dde7d683baa3246b721e5387d47161,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 39dde7d683baa3246b721e5387d47161,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 39dde7d683baa3246b721e5387d47161,
-        type: 3}
-      propertyPath: m_Name
-      value: daaa
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 39dde7d683baa3246b721e5387d47161,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1833238370}
-  m_SourcePrefab: {fileID: 100100000, guid: 39dde7d683baa3246b721e5387d47161, type: 3}
 --- !u!1 &398967019
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,7 +617,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &398967020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -727,6 +665,7 @@ GameObject:
   - component: {fileID: 458536032}
   - component: {fileID: 458536035}
   - component: {fileID: 458536034}
+  - component: {fileID: 458536036}
   - component: {fileID: 458536033}
   m_Layer: 0
   m_Name: "\u041A\u0430\u0440\u0442\u043E\u0447\u043A\u0430 (4)"
@@ -840,6 +779,23 @@ MonoBehaviour:
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 458536033}
+--- !u!114 &458536036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458536031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf9da338990be6a43a4da5fe9c4632a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chemicalElement: {fileID: 11400000, guid: dd294aa5b6f52e64b8c795e3464a5c42, type: 2}
+  chemicalElementTrig: {fileID: 0}
+  foundObjects: []
+  ImageTargetOb: []
+  spawnHeight: 1
 --- !u!1 &633102316
 GameObject:
   m_ObjectHideFlags: 0
@@ -1461,7 +1417,6 @@ GameObject:
   - component: {fileID: 949591452}
   - component: {fileID: 949591455}
   - component: {fileID: 949591454}
-  - component: {fileID: 949591457}
   - component: {fileID: 949591459}
   - component: {fileID: 949591460}
   m_Layer: 0
@@ -1557,27 +1512,6 @@ MonoBehaviour:
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 949591460}
---- !u!65 &949591457
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 949591451}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 8, y: 1, z: 8}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &949591459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1594,6 +1528,7 @@ MonoBehaviour:
   chemicalElementTrig: {fileID: 0}
   foundObjects: []
   ImageTargetOb: []
+  spawnHeight: 1
 --- !u!114 &949591460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2268,7 +2203,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 237, y: -74.848}
+  m_AnchoredPosition: {x: 237, y: -74.84799}
   m_SizeDelta: {x: 152.289, y: 45.512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1398724434
@@ -2338,7 +2273,7 @@ Transform:
   m_GameObject: {fileID: 1409422012}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6409874, y: -0.77404356, z: -26.77}
+  m_LocalPosition: {x: -1.99, y: 0, z: -21.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2403,13 +2338,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: --- EMPTY ---
+  mTrackableName: Kislorod
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/--- EMPTY ---.xml
-  mAspectRatio: 1
+  mDataSetPath: Vuforia/Cards.xml
+  mAspectRatio: 1.0578512
   mImageTargetType: 0
-  mWidth: 0.2
-  mHeight: 0.2
+  mWidth: 5
+  mHeight: 5.289256
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -2422,15 +2357,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1409422012}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf9da338990be6a43a4da5fe9c4632a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chemicalElement: {fileID: 11400000, guid: 873e05f7bb3d90a4f948a32c28718fe3, type: 2}
+  chemicalElement: {fileID: 11400000, guid: d276d15af7ccf27459d55aa282b0d9aa, type: 2}
   chemicalElementTrig: {fileID: 0}
   foundObjects: []
   ImageTargetOb: []
+  spawnHeight: 1
 --- !u!114 &1409422018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2445,8 +2381,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1409422016}
   mHiddenRoot: {fileID: 0}
-  mTargetName: --- EMPTY ---
-  mDatasetName: Vuforia/--- EMPTY ---.xml
+  mTargetName: Kislorod
+  mDatasetName: Vuforia/Cards.xml
   mCastedBehaviour: {fileID: 1409422016}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -2585,14 +2521,15 @@ GameObject:
   - component: {fileID: 1545485228}
   - component: {fileID: 1545485231}
   - component: {fileID: 1545485230}
-  - component: {fileID: 1545485229}
+  - component: {fileID: 1545485232}
+  - component: {fileID: 1545485233}
   m_Layer: 0
   m_Name: "\u041A\u0430\u0440\u0442\u043E\u0447\u043A\u0430 (3)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1545485228
 Transform:
   m_ObjectHideFlags: 0
@@ -2608,25 +2545,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 116378514}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1545485229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1545485227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1545485231}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: photo_2024-09-28_20-43-03
-  mDatasetName: Vuforia/Test1.xml
-  mCastedBehaviour: {fileID: 1545485231}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1545485230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2686,18 +2604,54 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: photo_2024-09-28_20-43-03
+  mTrackableName: h
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/Test1.xml
+  mDataSetPath: Vuforia/Cards.xml
   mAspectRatio: 0.75
   mImageTargetType: 0
-  mWidth: 7
-  mHeight: 5.25
+  mWidth: 5
+  mHeight: 3.75
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1545485229}
+  mPreview: {fileID: 1545485233}
+--- !u!114 &1545485232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545485227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf9da338990be6a43a4da5fe9c4632a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chemicalElement: {fileID: 11400000, guid: dd294aa5b6f52e64b8c795e3464a5c42, type: 2}
+  chemicalElementTrig: {fileID: 0}
+  foundObjects: []
+  ImageTargetOb: []
+  spawnHeight: 1
+--- !u!114 &1545485233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545485227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1545485231}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: h
+  mDatasetName: Vuforia/Cards.xml
+  mCastedBehaviour: {fileID: 1545485231}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1552322429
 GameObject:
   m_ObjectHideFlags: 0
@@ -2778,13 +2732,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: h
+  mTrackableName: Hodorod
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/Cards.xml
-  mAspectRatio: 0.75
+  mAspectRatio: 0.98046887
   mImageTargetType: 0
   mWidth: 5
-  mHeight: 3.75
+  mHeight: 4.902344
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -2802,8 +2756,7 @@ Transform:
   m_LocalPosition: {x: -1.76, y: 0, z: -12.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1833238369}
+  m_Children: []
   m_Father: {fileID: 116378514}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1552322436
@@ -2840,17 +2793,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1552322429}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf9da338990be6a43a4da5fe9c4632a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chemicalElement: {fileID: 11400000, guid: a6aa93adf7bc57b499a54a0a750b9d19, type: 2}
+  chemicalElement: {fileID: 11400000, guid: 873e05f7bb3d90a4f948a32c28718fe3, type: 2}
   chemicalElementTrig: {fileID: 0}
   foundObjects: []
   ImageTargetOb:
   - {fileID: 0}
   - {fileID: 0}
+  spawnHeight: 20
 --- !u!114 &1552322438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2865,7 +2819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1552322431}
   mHiddenRoot: {fileID: 0}
-  mTargetName: h
+  mTargetName: Hodorod
   mDatasetName: Vuforia/Cards.xml
   mCastedBehaviour: {fileID: 1552322431}
   mMeshFilter: {fileID: 0}
@@ -3242,39 +3196,6 @@ MonoBehaviour:
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
   mPreview: {fileID: 1824880929}
---- !u!1 &1833238368 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 39dde7d683baa3246b721e5387d47161,
-    type: 3}
-  m_PrefabInstance: {fileID: 222235833}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1833238369 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 39dde7d683baa3246b721e5387d47161,
-    type: 3}
-  m_PrefabInstance: {fileID: 222235833}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1833238370
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1833238368}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 42f340fc2b564a649944512644d86e25, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1873687189
 GameObject:
   m_ObjectHideFlags: 0

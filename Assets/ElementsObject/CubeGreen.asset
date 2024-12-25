@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: CubeGreen
   m_EditorClassIdentifier: 
   elementName: CubeGreen
-  elementPrefab: {fileID: 1176114039162355011, guid: e21a1ff6f03ca83488e4a353ac848130,
+  elementPrefab: {fileID: 2886750182054769685, guid: 6247813aa9e3deb43a984a27fe53369d,
     type: 3}
   interactions: []

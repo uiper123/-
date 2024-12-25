@@ -51,13 +51,13 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 39dde7d683baa3246b721e5387d47161,
         type: 3}
       propertyPath: m_Name
-      value: daaa
+      value: H 2
       objectReference: {fileID: 0}
     - target: {fileID: 6317578925029434746, guid: 39dde7d683baa3246b721e5387d47161,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 8caaff6b908ec7f4c901fa5fd594c580, type: 2}
+      objectReference: {fileID: 2100000, guid: c1579f8681707ad46845e1c3f60db3c0, type: 2}
     - target: {fileID: 8632055958874330854, guid: 39dde7d683baa3246b721e5387d47161,
         type: 3}
       propertyPath: m_LocalPosition.x

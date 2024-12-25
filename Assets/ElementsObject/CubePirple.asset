@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CubePirple
   m_EditorClassIdentifier: 
   elementName: CubePirple
-  elementPrefab: {fileID: 1176114039162355011, guid: 46d5aee737800b44da288e97196d5dcc,
+  elementPrefab: {fileID: 1739286747648053218, guid: 81f8bd0fb3153ec46b8c21f3674c055a,
     type: 3}
   interactions:
   - otherElementName: CubeRed(Clone)

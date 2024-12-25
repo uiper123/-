@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="Kislorod" size="5.000000 5.289256" />
+    <ImageTarget name="Hodorod" size="5.000000 4.902344" />
     <ImageTarget name="h" size="5.000000 3.750000" />
     <ImageTarget name="na" size="5.000000 6.666667" />
   </Tracking>
